@@ -77,7 +77,7 @@ export default {
   mounted() {
     this.timer = setInterval(() => {
       this.currentImg = this.currentImg + 1
-    }, 60000)
+    }, 6000)
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.handleResize)
@@ -93,7 +93,7 @@ export default {
       this.currentImg = index
       this.timer = setInterval(() => {
         this.currentImg = this.currentImg + 1
-      }, 60000)
+      }, 6000)
     },
 
     handleResize() {
